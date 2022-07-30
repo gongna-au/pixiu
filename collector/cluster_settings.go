@@ -54,7 +54,7 @@ func NewClusterSettings(logger log.Logger, client *http.Client, url *url.URL) *C
 	}
 }
 
-// Describe add Snapshots metrics descriptions
+// Describe add  metrics descriptions
 func (cs *ClusterSettings) Describe(ch chan<- *prometheus.Desc) {
 	ch <- cs.up.Desc()
 	ch <- cs.totalScrapes.Desc()
